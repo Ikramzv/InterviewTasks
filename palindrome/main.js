@@ -15,5 +15,3 @@ function main(str) {
 
   return true;
 }
-
-console.log(main("0_0 (: /- :) 0-0"));
