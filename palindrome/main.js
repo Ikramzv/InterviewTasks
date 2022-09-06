@@ -1,4 +1,4 @@
-function main(str = "menem") {
+function main(str) {
   // Turn argument to string since it can be number
   const pureString = str.toString();
   // replace all non-word characters ( space,special signs and others ) with empty string
