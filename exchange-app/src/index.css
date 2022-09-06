@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    background-color: white;
+    width: 70vw;
+    height: 90vh;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.top select {
+    background: #FFFFFF;
+    box-shadow: 3px 3px 10px rgba(14, 87, 214, 0.26);
+    border-radius: 20px;
+    height: 52px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+option {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.top select option:checked {
+    border-radius: 20px;
+    background-color: rgba(14, 87, 214, 0.26);
+    color: white;
+}
+
+.top > #select_left {
+    flex: 5;
+}
+
+.top .top_icon {
+    flex: 2;
+    display: grid;
+    place-items: center;
+    color: #0E57D6;
+}
+
+.top > #select_right {
+    flex: 5;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 6px rgba(14, 87, 214, 0.26);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.center > h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.center > p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.center_input_container {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.center_input_container .center_input {
+    flex: 8.5;
+    background: #F2F2F2;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    height: 52px;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.center_input_container .center_icon {
+    flex: 1.5;
+    display: grid;
+    place-items: center;
+    color: #0E57D6;
+    cursor: pointer;
+}
+
+.center_input_container .center_icon > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.exchanges_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.exchange_item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(14, 87, 214, 0.26);
+    border-radius: 20px;
+    height: 55px;
+    padding: 20px;
+}
+
+.exchange_item_icon {
+    flex: 1;
+}
+
+.exchange_item_text {
+    flex: 6;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.exchange_item_value {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
