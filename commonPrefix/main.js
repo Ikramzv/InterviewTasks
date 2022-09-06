@@ -11,7 +11,7 @@ function find(arr) {
   // By using regular expression find the matched strings
   const re = new RegExp(`[${lowestLength}]`, "gi");
   const matches = arr.map((item) => {
-    return item.match(re).join("");
+    return re.test(item) ? item.match(re).join("") : "";
   });
   const matchedString = matches.reduce((initial, item, arrayIndex) => {
     // if both existing value equal to empty string and current item's index not equal to 0 then return empty string
